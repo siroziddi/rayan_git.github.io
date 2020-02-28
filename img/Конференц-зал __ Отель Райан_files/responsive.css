@@ -1,0 +1,310 @@
+
+
+@media screen and (max-width: 1200px) {
+	.room__one_inner {
+		height: auto;
+		min-height: 580px;
+	}
+
+	.room__one  {
+		width: 50% !important;
+	}
+
+	.room__one_inner .link {
+	    width: 50%;
+	    position: absolute;
+	    width: 100%;
+	    bottom: 20px;
+	}
+
+	.mob-menu__body a {
+		padding-left: 50px !important;		
+	}
+
+	.mob-menu__header .icon-cancel {
+	    display: block;
+	    float: right;
+	    color: #0d4a79;
+	    font-size: 20px;
+	    padding-top: 7px;
+	    padding-right: 5px;
+	    cursor: pointer;
+	}
+
+
+	.menu__body .navbar-nav > li > a {
+	    margin-top: 35px;
+	    margin-bottom: 35px;
+	    padding-left: 45px;
+	}
+
+	.footer .container {
+	    flex-wrap: wrap;
+	} 
+
+	.footer .container > div {
+		width: 100%;
+		text-align: center !important;
+		margin-bottom: 10px;
+	}
+
+}
+
+@media screen and (max-width: 1100px) {
+
+	.o-hidden {
+	    overflow: hidden;
+	}
+
+	.show-menu {
+	    display: block;
+	    transform: translate3d(0,0,0);
+	}
+
+
+
+	.mobile-menu-cover {
+	    width: 100%;
+	    height: 100%;
+	    min-height: 100vh;
+	    background: white;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 1222000;
+	    overflow: hidden!important;
+	    will-change: transform;
+	}
+
+	.mob-menu__header {
+	    height: 50px;
+	    position: relative;
+	    overflow: hidden;
+	    z-index: 1100;
+	    padding: 10px;
+	}
+
+	.mob-menu__body {
+	    position: absolute;
+	    overflow: hidden;
+	    overflow-y: auto;
+	    width: 100%;
+	    top: 50px;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	}
+
+	.pc-menu {
+		display: none;
+	}
+
+	.inventory {
+		display: none;
+	}
+
+	.mobile-inventory {
+		display: block;
+	}
+
+	.services__service {
+	    width: 50%;
+	}
+
+	.room-section {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+
+	.room-section__one {
+		width: 50%;
+	}
+
+	.mobile-inventory .container {
+		height: inherit;
+		display: flex;
+		padding-top: 4px;
+	}
+
+	.mobile-inventory__contacts {
+		width: 50%;
+		display: flex;
+	}
+
+	.lang-selector {
+		width: 50%;
+	}
+
+	.mobile-inventory__contacts a {
+	    display: block;
+	    color: white;
+	    font-size: 17px;
+	    margin-right: 20px;
+	}
+
+	..mobile-inventory__contacts a:hover, .mobile-inventory__contacts a:active, .mobile-inventory__contacts a:focus {
+		text-decoration: none;
+	}
+
+	.mobile-menu {
+		display: block;
+	}
+
+	.navbar-header {
+		width: 50%;
+	}
+
+	.mobile-menu {
+		width: 50%;
+		text-align: right;
+	}
+
+	.navbar .container {
+		display: flex;
+    	justify-content: space-between;
+	}
+
+	.mobile-menu__menu {
+		margin-top: 27px;
+    	font-size: 25px;
+    	cursor: pointer;
+	}
+
+	.contacts {
+		flex-wrap: wrap;
+	}
+
+	.contacts__one {
+		width: 50%;
+	}
+
+	.advantage__item {
+		width: 50%;
+	}
+
+	.col-md-12 {
+		margin-top: 0px !important;
+	}
+
+	.room__one_inner {
+		height: auto;
+	}
+
+	.navbar-default .navbar-brand {
+		padding-left: 0px;
+	}
+
+	.room__actions {
+	    position: absolute;
+	    width: 100%;
+	    bottom: 25px;
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+
+	.room__actions {
+		position: relative;
+	}
+
+	.room__one_inner {
+    	padding-bottom: 0px;
+	}
+
+	.order-button {
+		width: 100%;
+	}
+
+	.rooms_advanced .room__one_inner {
+		padding-bottom: 30px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+}
+
+@media screen and (max-width: 800px) {
+	.room-section__one {
+		width: 100%;
+	}
+
+	.services__service {
+		width: 100%;
+	}
+
+	.service__inner {
+		height: auto;
+	}
+
+	.room__one {
+	    width: 100%;
+	}
+
+	.seats {
+		flex-wrap: wrap;
+	}
+
+	.seat {
+		width: 100%;
+    	margin-bottom: 50px;
+	}
+
+	.c-gallery a {
+		width: 50%;
+	}
+
+	.room__one_inner {
+		min-height: auto;
+	}
+
+	.room__one {
+	    width: 100% !important;
+	}
+
+	.room__one_inner .link {
+		position: relative;
+		bottom: 0;
+	}
+
+	.advantage__item {
+	    width: 100%;
+	}
+
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+}
+
+@media screen and (max-width: 600px) {
+	
+}
+
+@media screen and (max-width: 500px) {
+	.about-block img {
+	    display: block;
+	    width: 100%;
+	}
+
+	.mobile-inventory__contacts a {
+		margin-right: 13px;
+	}
+}
+
+@media screen and (max-width:479px){
+	
+}
+
+@media screen and (max-width: 430px) {
+
+}
+
+@media screen and (max-width: 350px) {
+
+}

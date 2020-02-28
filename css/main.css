@@ -1,0 +1,123 @@
+
+li a{
+	font-weight: 500;
+}
+.styles_form{
+	border-radius: 15px;
+	border: 1px solid #7399ff;
+	padding: 5px;
+	padding-left: 10px;
+	text-align: center;
+}
+.btn_form{
+	padding: 5px;
+	width: 200px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	background-color: #0c4978;
+}
+.jumbotron{
+	background-color:  #c1945b;
+}
+
+.carousel-item img{
+	height: 70vh;
+	object-fit: cover;
+}
+.content{
+	text-align: center;
+    margin-bottom: 80px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #656565;
+    line-height: 35px;
+}
+.content_img{
+	margin-top: 55px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.services i{
+	margin-top: 15px;
+	color: #50965c;
+	text-align: center;
+}
+.services h4{
+	font-size: 22px;
+	font-weight: 500;
+	color: #0d4a79;
+	text-align: center;
+	margin-top: 20px;
+}
+.card-hei{
+	height: 365px;
+	border: 1px solid #50965c;
+}
+.services p{
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 18px;
+	color: #585858;
+	margin-top: 25px;
+	line-height: 20px;
+}
+footer{
+	margin-top: 50px;
+	background: #0D385A;
+	color: #fff;
+}
+footer a{
+	color: #96A8B7;
+}
+li a{
+	line-height: 30px;
+}
+.page-header{
+	height: 400px;
+	color: white;
+	background: url(http://rayanhotel.kg/uploads/sliders/slide1.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+.page-header h1{
+	padding-top: 230px;
+}
+.mesq{
+	color: #fff;
+	background: #C1945B;
+	text-align: center;
+	padding-bottom: 50px;
+}
+.cofe{
+	text-align: center;
+}
+.room {
+	text-align: center;
+	margin-top: 50px;
+}
+.room .card{
+	background: #F0F0F0;
+	margin-top: 25px
+}
+.text-det{
+	text-align: center;
+}
+.text-det a{
+	background-color: #B9764D;
+	color: #fff;
+	text-transform: uppercase;
+	width: 300px;
+}
+.details li{
+	list-style: none
+}
+.details i{
+	color: #C49D8C;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.img-det img{
+	margin-top: 10px;
+}

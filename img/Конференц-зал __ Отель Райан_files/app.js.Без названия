@@ -1,0 +1,128 @@
+$(function() {
+
+	$(document).ready(function(){
+	  $(".owl-slider").owlCarousel({
+			loop:true,
+			margin:10,
+			nav: true,
+			navText: ["<span class='icon-back'></span>","<span class='icon-next'></span>"],
+			dots: true,
+			autoplay: true,
+			autoplayTimeout: 2000,
+			navContainerClass: 'owl-custom-navigation',
+			navigation: true,
+			items: 1,
+			autoplayHoverPause: true,
+			height: 300,
+		});
+	});
+  
+  	$('.mob-menu-button').click(function(e) {
+		$('body').addClass('o-hidden');
+		$('.mobile-menu-cover').addClass('show-menu');
+	});
+
+	$('.icon-cancel').click(function(e) {
+		$('.mobile-menu-cover').removeClass('show-menu');
+		$('body').removeClass('o-hidden');
+	});
+
+	// toggle tooltips
+	$('[data-toggle="tooltip"]').tooltip({
+		container: 'body'
+	});
+
+	// Activate Carousel
+	$("#roomImages").carousel();
+
+	// Enable Carousel Indicators
+	$(".item").click(function(){
+	    $("#roomImages").carousel(1);
+	});
+
+	// Enable Carousel Controls
+	$(".left").click(function(){
+	    $("#roomImages").carousel("prev");
+	});
+
+	// sticky navbar
+	if ($('.navbar-sticky').length) {
+		var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
+			var stickyHeight = sticky.outerHeight();
+			var stickyTop = stickyWrapper.offset().top;
+
+			if (scrollElement.scrollTop() >= stickyTop) {
+				stickyWrapper.height(stickyHeight);
+				sticky.addClass("is-sticky");
+			}
+			else {
+				sticky.removeClass("is-sticky");
+				stickyWrapper.height('auto');
+			}
+		};
+
+		// Find all data-toggle="sticky-onscroll" elements
+		$('.navbar-sticky').each(function() {
+			var sticky = $(this);
+			var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
+			sticky.before(stickyWrapper);
+
+			// Scroll & resize events
+			$(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
+				stickyToggle(sticky, stickyWrapper, $(this));
+			});
+
+			// On page load
+			stickyToggle(sticky, stickyWrapper, $(window));
+		});
+	}
+
+	// search toggle
+	$('.js-search-navbar-toggle').click(function(e) {
+		e.preventDefault();
+
+		var $this = $(this);
+
+		$('body, .navbar').append('<div class="search-navbar-backdrop"></div>');
+
+		$this.next().addClass('is-visible');
+
+		setTimeout(function() {
+			$this.next().find('input').focus();
+		}, 200);
+	});
+
+	$('body').on('click', '.search-navbar-backdrop', function(e) {
+		$('.search-navbar .input-group').removeClass('is-visible');
+		$('.search-navbar-backdrop').remove();
+	});
+
+	// back to top button
+	var $backToTopBtn = $('.js-back-to-top');
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 200) {
+			$backToTopBtn.addClass('on');
+		} else {
+			$backToTopBtn.removeClass('on');
+		}
+	});
+
+	$backToTopBtn.on('click', function(e){
+		$('html, body').animate({
+			scrollTop: 0
+		}, 'fast');
+	})
+});
+
+
+
+	const numCols = 3;
+const colHeights = Array(numCols).fill(0);
+const container = document.getElementById('masonry-with-columns');
+Array.from(container.children).forEach((child, i) => {
+  const order = i % numCols;
+  child.style.order = order;
+  colHeights[order] += parseFloat(child.clientHeight);
+})
+container.style.height = Math.max(...colHeights) + 'px';
